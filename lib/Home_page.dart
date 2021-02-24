@@ -1,0 +1,159 @@
+import 'package:App_Cefet/AppController.dart';
+import 'package:App_Cefet/membros.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() {
+    return HomePageState();
+  }
+}
+
+class HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(90),
+        child: AppBar(
+          elevation: 0,
+          centerTitle: true,
+          title: Image.asset(
+            'assets/logo.png',
+            fit: BoxFit.contain,
+            height: 100,
+            alignment: Alignment.center,
+          ),
+        ),
+      ),
+      drawer: Drawer(
+          child: ListView(
+        children: <Widget>[
+          Container(
+            height: 90,
+            child: DrawerHeader(
+              child: ListTile(
+                leading: Icon(Icons.reorder),
+                title: Text('Menu'),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.cyan,
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(15),
+            child: ListTile(
+                leading: Icon(Icons.home, color: Colors.blue[300]),
+                title: Text("Inicio"),
+                trailing: Icon(Icons.arrow_forward),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ),
+                  );
+                }),
+          ),
+          Container(
+            padding: EdgeInsets.all(15),
+            child: ListTile(
+                leading: Icon(Icons.input, color: Colors.blue[300]),
+                title: Text("Entrar no Portal"),
+                trailing: Icon(Icons.arrow_forward),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ),
+                  );
+                }),
+          ),
+          Container(
+            padding: EdgeInsets.all(15),
+            child: ListTile(
+                leading: Icon(Icons.menu_book, color: Colors.blue[300]),
+                title: Text("Sobre os Cursos"),
+                trailing: Icon(Icons.arrow_forward),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Membros(),
+                    ),
+                  );
+                }),
+          ),
+          Container(
+            padding: EdgeInsets.all(15),
+            child: ListTile(
+                leading: Icon(Icons.group, color: Colors.blue[300]),
+                title: Text("Redes Sociais"),
+                trailing: Icon(Icons.arrow_forward),
+                onTap: () {}),
+          ),
+          Container(
+            padding: EdgeInsets.all(15),
+            child: ListTile(
+              leading: Icon(
+                Icons.wb_sunny,
+                color: Colors.blue[300],
+              ),
+              title: Text('Tema'),
+              subtitle: AppController.instance.isDartTheme
+                  ? Text('Escuro')
+                  : Text('Claro'),
+              trailing: Switch(
+                  value: AppController.instance.isDartTheme,
+                  onChanged: (value) {
+                    AppController.instance.ChangeTheme();
+                  }),
+            ),
+          ),
+        ],
+      )),
+      body: Container(
+        width: double.infinity,
+        margin: EdgeInsets.all(40),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'A Instituição',
+              style: TextStyle(
+                  color: Colors.lightBlue,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            ),
+            Container(
+              height: 250,
+              width: 400,
+              margin: EdgeInsets.all(35),
+              padding: EdgeInsets.all(30),
+              decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  color: Colors.white,
+                  boxShadow: [BoxShadow(color: Colors.blue)],
+                  borderRadius: BorderRadius.circular(15)),
+              child: Text(
+                'A instituição Cefet foi fundada em 1917 originalmente como uma escola comum e posteriormente em 1934 foi transformada em uma escola técnica.',
+                style: TextStyle(color: Colors.black54, fontSize: 20),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(35),
+              padding: EdgeInsets.all(30),
+              child: Text(
+                'Cursos disponíveis:',
+                style: TextStyle(color: Colors.black54, fontSize: 20),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
