@@ -21,7 +21,7 @@ class Sobre_cursos extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Text(
-              "Professores e Orientadores do Projeto:",
+              "Cursos técnicos disponíveis na unidade do Cefet Maracanã:",
               style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
