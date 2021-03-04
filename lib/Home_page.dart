@@ -1,4 +1,5 @@
 import 'package:App_Cefet/AppController.dart';
+import 'package:App_Cefet/Rede_social.dart';
 import 'package:App_Cefet/Sobre_curso.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +97,14 @@ class HomePageState extends State<HomePage> {
                   leading: Icon(Icons.group, color: Colors.blue[300]),
                   title: Text("Redes Sociais"),
                   trailing: Icon(Icons.arrow_forward),
-                  onTap: () {}),
+                  onTap: () {
+                    Navigator.push(
+                        context, 
+                        MaterialPageRoute(
+                          builder: (context) => Redes_sociais(),
+                        ),
+                    );
+                  }),
             ),
             Container(
               padding: EdgeInsets.all(15),
