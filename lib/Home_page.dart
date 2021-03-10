@@ -158,6 +158,7 @@ class HomePageState extends State<HomePage> {
                       color: Colors.lightBlue,
                       fontSize: 25,
                       fontWeight: FontWeight.bold)),
+              /*----PARTE QUE ESTAVA DANDO ERRO----
               Container(
                 height: 85,
                 width: 350,
@@ -172,7 +173,7 @@ class HomePageState extends State<HomePage> {
                       ListView(children: [Text('info'),Text('elt')],),
                     ],
                   ),
-              ),
+              ),*/
               SizedBox(height: 30),
               Text('Unidades',
                   style: TextStyle(
