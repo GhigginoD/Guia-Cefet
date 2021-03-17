@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
       animation: AppController.instance,
       builder: (context, child) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'App Cefet',
           theme: ThemeData(
               primaryColor: Colors.blue[400],
