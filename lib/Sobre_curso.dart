@@ -14,7 +14,7 @@ class Sobre_cursos extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
-                      fontWeight: FontWeight.bold)))),
+                      fontWeight: FontWeight.bold,fontStyle: FontStyle.italic)))),
       body: Container(
         padding: EdgeInsets.all(40),
         width: double.infinity,
@@ -25,82 +25,28 @@ class Sobre_cursos extends StatelessWidget {
               style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.lightBlue),
+                  color: Colors.lightBlue,
+                  fontStyle: FontStyle.italic),
             ),
             SizedBox(
               height: 50,
             ),
             Container(
-              width: 90,
-              height: 50,
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
-              child: Text(
-                'Informática',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                    color: Colors.black54),
-              ),
-            ),
-            SizedBox(
-              height: 25,
-            ),
-            Container(
-              width: 90,
-              height: 50,
-              padding: EdgeInsets.only(top: 15),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.black12)]),
-              child: Text(
-                'Turismo',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                    color: Colors.black54),
-              ),
-            ),
-            SizedBox(
-              height: 25,
-            ),
-            Container(
-              width: 90,
-              height: 50,
-              padding: EdgeInsets.only(top: 15),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.black12)]),
-              child: Text(
-                'Edificações',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                    color: Colors.black54),
-              ),
-            ),
-            SizedBox(
-              height: 25,
-            ),
-            Container(
-              width: 90,
-              height: 50,
-              padding: EdgeInsets.only(top: 15),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.black12)]),
-              child: Text(
-                'Mecânica',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                    color: Colors.black54),
+              child: TextButton(
+                child: Text('Informática', textAlign: TextAlign.center),
+                style: TextButton.styleFrom(
+                    primary: Colors.white,
+                    textStyle: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        fontStyle: FontStyle.italic)),
+                onPressed: () {
+                  print('pressed');
+                },
               ),
             ),
           ],
