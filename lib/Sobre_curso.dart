@@ -14,7 +14,8 @@ class Sobre_cursos extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,fontStyle: FontStyle.italic)))),
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic)))),
       body: Container(
         padding: EdgeInsets.all(40),
         width: double.infinity,
@@ -36,17 +37,303 @@ class Sobre_cursos extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
-              child: TextButton(
-                child: Text('Informática', textAlign: TextAlign.center),
-                style: TextButton.styleFrom(
-                    primary: Colors.white,
-                    textStyle: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25,
-                        fontStyle: FontStyle.italic)),
-                onPressed: () {
-                  print('pressed');
-                },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Administração',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Administração');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Informatica',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Informatica');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Mecanica',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Mecanica');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Edificações',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Edificações');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Estradas',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Estradas');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Eletronica',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Eletronica');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Eletrotecnica',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Eletrotecnica');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Meteorologia',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Meteorologia');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Segurança do Trabalho',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Segurança do Trabalho');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Telecomunicações',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Telecomunicações');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 15),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    child: Text('Turismo',textAlign: TextAlign.start),
+                    style: TextButton.styleFrom(
+                        primary: Colors.white,
+                        textStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            fontStyle: FontStyle.italic)),
+                    onPressed: () {
+                      print('pressed Turismo');
+                    },
+                  ),
+                  Icon(Icons.lock,color: Colors.white),
+                ],
               ),
             ),
           ],
