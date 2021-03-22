@@ -140,13 +140,14 @@ class HomePageState extends State<HomePage> {
               height: 50,
               margin: EdgeInsets.only(top: 15, left: 10, right: 10, bottom: 5), // padding: EdgeInsets.all(10),
               child: FlatButton(
-                color: Colors.lightBlueAccent,
+                color: Color(0xff6894BD),
                 shape: UnderlineInputBorder(),
                 splashColor: Colors.blue,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Acesso ao Portal')
+                    Text('Acesso ao Portal',style: TextStyle(
+                  color: Color(0xffF6F9FC),fontSize: 20)),
                   ],
                 ),
                 onPressed: () async{
@@ -165,12 +166,13 @@ class HomePageState extends State<HomePage> {
              // padding: EdgeInsets.all(10),
               child: FlatButton(
                 splashColor: Colors.blue,
-                color: Colors.lightBlueAccent,
+                color: Color(0xff6894BD),
                 shape: UnderlineInputBorder(),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Manual do aluno')
+                    Text('Manual do aluno',style: TextStyle(
+                    color: Color(0xffF6F9FC),fontSize: 20)),
                   ],
                 ),
                 onPressed: () async {
