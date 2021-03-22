@@ -3,6 +3,7 @@ import 'package:App_Cefet/Rede_social.dart';
 import 'package:App_Cefet/Sobre_curso.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -135,6 +136,53 @@ class HomePageState extends State<HomePage> {
               ),
             ),
             Divider(color: Colors.white,thickness: 2),
+            Container(
+              height: 50,
+              margin: EdgeInsets.only(top: 15, left: 10, right: 10, bottom: 5), // padding: EdgeInsets.all(10),
+              child: FlatButton(
+                color: Colors.lightBlueAccent,
+                shape: UnderlineInputBorder(),
+                splashColor: Colors.blue,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Acesso ao Portal')
+                  ],
+                ),
+                onPressed: () async{
+                  const url = 'https://alunos.cefet-rj.br/aluno/login.action?error=';
+                  if(await canLaunch(url)){
+                    await launch(url);
+                  }else{
+                    throw 'Não foi possível acessar a $url';
+                  }
+                },
+              ),
+            ),
+            Container(
+              height: 50,
+              margin: EdgeInsets.only(top: 15, left: 10, right: 10, bottom: 5),
+             // padding: EdgeInsets.all(10),
+              child: FlatButton(
+                splashColor: Colors.blue,
+                color: Colors.lightBlueAccent,
+                shape: UnderlineInputBorder(),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Manual do aluno')
+                  ],
+                ),
+                onPressed: () async {
+                  const url = 'http://www.cefet-rj.br/index.php/2015-06-12-17-56-40';
+                  if (await canLaunch(url)){
+                    await launch(url);
+                  }else{
+                    throw 'Não foi possível acessar a $url';
+                  }
+                },
+              ),
+            ),
           ],
         )),
         body: Container(
