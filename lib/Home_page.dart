@@ -37,20 +37,28 @@ class HomePageState extends State<HomePage> {
               height: 90,
               child: DrawerHeader(
                 child: ListTile(
-                  leading: Icon(Icons.reorder),
-                  title: Text('Menu'),
+                  leading: Icon(
+                    Icons.reorder,
+                    color: Color(0xffF6F9FC),
+                  ),
+                  title: Text('Menu',
+                      style: TextStyle(
+                        color: Color(0xffF6F9FC),
+                        fontSize: 25,
+                      )),
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.cyan,
+                  color: Color(0xff6894BD),
                 ),
               ),
             ),
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
-                  leading: Icon(Icons.home, color: Colors.blue[300]),
-                  title: Text("Inicio"),
-                  trailing: Icon(Icons.arrow_forward),
+                  leading: Icon(Icons.home, color: Color(0xff9DA4A7)),
+                  title: Text("Inicio",
+                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
+                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -60,27 +68,26 @@ class HomePageState extends State<HomePage> {
                     );
                   }),
             ),
-            Container(
+            Divider(color: Colors.white,thickness: 2),
+             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
-                  leading: Icon(Icons.input, color: Colors.blue[300]),
-                  title: Text("Entrar no Portal"),
-                  trailing: Icon(Icons.arrow_forward),
+                  leading: Icon(Icons.input, color: Color(0xff9DA4A7)),
+                  title: Text("Entrar no Portal",
+                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
+                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => HomePage(),
-                      ),
-                    );
+                    print("pressed Entrar no portal");
                   }),
             ),
+            Divider(color: Colors.white,thickness: 2),
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
-                  leading: Icon(Icons.menu_book, color: Colors.blue[300]),
-                  title: Text("Sobre os Cursos"),
-                  trailing: Icon(Icons.arrow_forward),
+                  leading: Icon(Icons.menu_book, color: Color(0xff9DA4A7)),
+                  title: Text("Sobre os Cursos",
+                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
+                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -90,29 +97,33 @@ class HomePageState extends State<HomePage> {
                     );
                   }),
             ),
+            Divider(color: Colors.white,thickness: 2),
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
-                  leading: Icon(Icons.group, color: Colors.blue[300]),
-                  title: Text("Redes Sociais"),
-                  trailing: Icon(Icons.arrow_forward),
+                  leading: Icon(Icons.group, color: Color(0xff9DA4A7)),
+                  title: Text("Redes Sociais",
+                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
+                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
                   onTap: () {
                     Navigator.push(
-                        context, 
-                        MaterialPageRoute(
-                          builder: (context) => Redes_sociais(),
-                        ),
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Redes_sociais(),
+                      ),
                     );
                   }),
             ),
+            Divider(color: Colors.white, thickness: 2),
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
                 leading: Icon(
                   Icons.wb_sunny,
-                  color: Colors.blue[300],
+                  color: Color(0xff9DA4A7),
                 ),
-                title: Text('Tema'),
+                title: Text('Tema',
+                    style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
                 subtitle: AppController.instance.isDartTheme
                     ? Text('Escuro')
                     : Text('Claro'),
@@ -123,6 +134,7 @@ class HomePageState extends State<HomePage> {
                     }),
               ),
             ),
+            Divider(color: Colors.white,thickness: 2),
           ],
         )),
         body: Container(
@@ -134,7 +146,7 @@ class HomePageState extends State<HomePage> {
               Text(
                 'A Instituição',
                 style: TextStyle(
-                    color: Colors.lightBlue,
+                    color: Color(0xff6894BD),
                     fontSize: 25,
                     fontWeight: FontWeight.bold),
               ),
@@ -145,39 +157,23 @@ class HomePageState extends State<HomePage> {
                 padding: EdgeInsets.all(30),
                 decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
-                    color: Colors.white70,
-                    boxShadow: [BoxShadow(color: Colors.blue)],
+                    color: Color(0xffC9E1EE),
+                    boxShadow: [BoxShadow(color: Color(0xffD9DFE2))],
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(
                   'A instituição Cefet foi fundada em 1917 originalmente como uma escola comum e posteriormente em 1934 foi transformada em uma escola técnica.',
-                  style: TextStyle(color: Colors.black54, fontSize: 20),
+                  style: TextStyle(color: Color(0xff1D2022), fontSize: 20),
                 ),
               ),
               Text('Cursos disponíveis',
                   style: TextStyle(
-                      color: Colors.lightBlue,
+                      color: Color(0xff6894BD),
                       fontSize: 25,
                       fontWeight: FontWeight.bold)),
-              /*----PARTE QUE ESTAVA DANDO ERRO----
-              Container(
-                height: 85,
-                width: 350,
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  color: Colors.white70,
-                  borderRadius: BorderRadius.circular(30),
-                  boxShadow: [BoxShadow(color: Colors.blue)],
-                ),
-                  child: Row(
-                    children: [
-                      ListView(children: [Text('info'),Text('elt')],),
-                    ],
-                  ),
-              ),*/
               SizedBox(height: 30),
               Text('Unidades',
                   style: TextStyle(
-                      color: Colors.lightBlue,
+                      color: Color(0xff6894BD),
                       fontSize: 25,
                       fontWeight: FontWeight.bold)),
             ],

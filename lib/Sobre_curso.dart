@@ -7,7 +7,7 @@ class Sobre_cursos extends StatelessWidget {
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(75),
           child: AppBar(
-              backgroundColor: Colors.blue[400],
+              backgroundColor: Color(0xff6894BD),
               elevation: 0,
               centerTitle: true,
               title: Text('Sobre os cursos',
@@ -26,7 +26,7 @@ class Sobre_cursos extends StatelessWidget {
               style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.lightBlue,
+                  color: Color(0xff6894BD),
                   fontStyle: FontStyle.italic),
             ),
             SizedBox(
@@ -36,7 +36,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -63,7 +63,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff6894BD))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -91,7 +91,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -119,7 +119,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -147,7 +147,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -175,7 +175,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -203,7 +203,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -231,7 +231,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -259,7 +259,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -287,7 +287,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -315,7 +315,7 @@ class Sobre_cursos extends StatelessWidget {
               padding: EdgeInsets.only(top: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.lightBlue[200])]),
+                  boxShadow: [BoxShadow(color: Color(0xff9DA4A7))]),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
