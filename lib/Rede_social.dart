@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class Redes_sociais extends StatefulWidget {
   State<Redes_sociais> createState() {
@@ -233,7 +234,29 @@ class Redes_sociais_page extends State<Redes_sociais> {
                   },
                 ),
               ),
+            ),
+
+            SignInButton(
+              Buttons.Twitter,
+              onPressed: () {},
+            ),
+
+            SignInButton(
+              Buttons.LinkedIn,
+              onPressed: () {},
+            ),
+
+            SignInButton(
+              Buttons.Email,
+              onPressed: () {},
+            ),
+
+            SignInButton(
+              Buttons.Facebook,
+              text: "Sign up with Facebook",
+              onPressed: () {},
             )
+
           ],
         ),
       ),
