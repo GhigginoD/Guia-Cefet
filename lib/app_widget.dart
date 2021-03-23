@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'App Cefet',
           theme: ThemeData(
-              primaryColor: Colors.blue[400],
+              primaryColor: Color(0xff6894BD),
               brightness: AppController.instance.isDartTheme
                   ? Brightness.dark
                   : Brightness.light),
