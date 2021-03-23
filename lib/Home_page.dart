@@ -70,18 +70,6 @@ class HomePageState extends State<HomePage> {
                   }),
             ),
             Divider(color: Colors.white,thickness: 2),
-             Container(
-              padding: EdgeInsets.all(15),
-              child: ListTile(
-                  leading: Icon(Icons.input, color: Color(0xff9DA4A7)),
-                  title: Text("Entrar no Portal",
-                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
-                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
-                  onTap: () {
-                    print("pressed Entrar no portal");
-                  }),
-            ),
-            Divider(color: Colors.white,thickness: 2),
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
