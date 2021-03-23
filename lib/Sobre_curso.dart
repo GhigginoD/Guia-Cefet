@@ -12,7 +12,7 @@ class Sobre_cursos extends StatelessWidget {
               centerTitle: true,
               title: Text('Sobre os cursos',
                   style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 25,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontStyle: FontStyle.italic)))),
@@ -46,7 +46,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Administração');
@@ -74,7 +74,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Informatica');
@@ -102,7 +102,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Mecanica');
@@ -130,7 +130,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Edificações');
@@ -158,7 +158,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Estradas');
@@ -186,7 +186,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Eletronica');
@@ -214,7 +214,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Eletrotecnica');
@@ -242,7 +242,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Meteorologia');
@@ -270,7 +270,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Segurança do Trabalho');
@@ -293,12 +293,12 @@ class Sobre_cursos extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   TextButton(
-                    child: Text('Telecomunicações',textAlign: TextAlign.start),
+                    child: Text('Telecomunicações',textAlign: TextAlign.start,),
                     style: TextButton.styleFrom(
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Telecomunicações');
@@ -326,7 +326,7 @@ class Sobre_cursos extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 25,
+                            fontSize: 17,
                             fontStyle: FontStyle.italic)),
                     onPressed: () {
                       print('pressed Turismo');
