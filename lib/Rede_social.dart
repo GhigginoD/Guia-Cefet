@@ -33,45 +33,13 @@ class Redes_sociais_page extends State<Redes_sociais> {
         child: ListView(
           children: <Widget>[
             Container(
-              alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  stops: [0.1, 1],
-                  colors: [
-                    Color(0xFFFFFFFF),
-                    Color(0XFF1565C0),
-                  ],
-                ),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(5),
-                ),
-              ),
-              child: SizedBox(
-                child: FlatButton(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        child: SizedBox(
-                          child: Image.asset("assets/logo.png"),
-                          height: 50,
-                          width: 50,
-                        ),
-                      ),
-                      Text(
-                        "Instagram",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ],
-                  ),
-                  onPressed: () async {
+              padding: EdgeInsets.all(15),
+              child: ListTile(
+                  leading: Icon(Icons.photo_camera_outlined, color: Color(0xff9DA4A7)),
+                  title: Text("Instagram",
+                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
+                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
+                  onTap: () async {
                     const url = 'https://www.instagram.com/cefet_rj/';
                     if (await canLaunch(url)) {
                       await launch(url);
@@ -79,50 +47,17 @@ class Redes_sociais_page extends State<Redes_sociais> {
                       throw 'Não foi possível acessar $url';
                     }
                   },
-                ),
               ),
             ),
             Divider(color: Colors.white, thickness: 2,height: 40),
             Container(
-              alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  stops: [0.1, 1],
-                  colors: [
-                    Color(0xFFFFFFFF),
-                    Color(0XFF1565C0),
-                  ],
-                ),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(5),
-                ),
-              ),
-              child: SizedBox(
-                child: FlatButton(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        child: SizedBox(
-                          child: Image.asset("assets/logo.png"),
-                          height: 50,
-                          width: 50,
-                        ),
-                      ),
-                      Text(
-                        "Twitter",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ],
-                  ),
-                  onPressed: () async {
+              padding: EdgeInsets.all(15),
+              child: ListTile(
+                  leading: Icon(Icons.alternate_email, color: Color(0xff9DA4A7)),
+                  title: Text("Twitter",
+                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
+                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
+                  onTap: () async {
                     const url = 'https://twitter.com/cefet_rj';
                     if (await canLaunch(url)) {
                       await launch(url);
@@ -130,50 +65,17 @@ class Redes_sociais_page extends State<Redes_sociais> {
                       throw 'Não foi possível acessar $url';
                     }
                   },
-                ),
               ),
             ),
             Divider(color: Colors.white, thickness: 2,height: 40),
             Container(
-              alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  stops: [0.1, 1],
-                  colors: [
-                    Color(0xFFFFFFFF),
-                    Color(0XFF1565C0),
-                  ],
-                ),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(5),
-                ),
-              ),
-              child: SizedBox(
-                child: FlatButton(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        child: SizedBox(
-                          child: Image.asset("assets/logo.png"),
-                          height: 50,
-                          width: 50,
-                        ),
-                      ),
-                      Text(
-                        "Linkedin",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ],
-                  ),
-                  onPressed: () async {
+              padding: EdgeInsets.all(15),
+              child: ListTile(
+                  leading: Icon(Icons.ac_unit, color: Color(0xff9DA4A7)),
+                  title: Text("Linkedin",
+                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
+                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
+                  onTap: () async {
                     const url = 'https://www.linkedin.com/school/25008864/';
                     if (await canLaunch(url)) {
                       await launch(url);
@@ -181,50 +83,17 @@ class Redes_sociais_page extends State<Redes_sociais> {
                       throw 'Não foi possível acessar $url';
                     }
                   },
-                ),
               ),
             ),
             Divider(color: Colors.white, thickness: 2,height: 40),
             Container(
-              alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  stops: [0.1, 1],
-                  colors: [
-                    Color(0xFFFFFFFF),
-                    Color(0XFF1565C0),
-                  ],
-                ),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(5),
-                ),
-              ),
-              child: SizedBox(
-                child: FlatButton(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        child: SizedBox(
-                          child: Image.asset("assets/logo.png"),
-                          height: 50,
-                          width: 50,
-                        ),
-                      ),
-                      Text(
-                        "Facebook",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ],
-                  ),
-                  onPressed: () async {
+              padding: EdgeInsets.all(15),
+              child: ListTile(
+                  leading: Icon(Icons.assignment_ind_outlined, color: Color(0xff9DA4A7)),
+                  title: Text("Facebook",
+                      style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
+                  trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
+                  onTap: () async {
                     const url = 'https://www.facebook.com/cefetrjoficial';
                     if (await canLaunch(url)) {
                       await launch(url);
@@ -232,30 +101,9 @@ class Redes_sociais_page extends State<Redes_sociais> {
                       throw 'Não foi possível acessar $url';
                     }
                   },
-                ),
               ),
             ),
 
-            SignInButton(
-              Buttons.Twitter,
-              onPressed: () {},
-            ),
-
-            SignInButton(
-              Buttons.LinkedIn,
-              onPressed: () {},
-            ),
-
-            SignInButton(
-              Buttons.Email,
-              onPressed: () {},
-            ),
-
-            SignInButton(
-              Buttons.Facebook,
-              text: "Sign up with Facebook",
-              onPressed: () {},
-            )
 
           ],
         ),
