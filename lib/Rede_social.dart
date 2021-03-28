@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class Redes_sociais extends StatefulWidget {
   State<Redes_sociais> createState() {
