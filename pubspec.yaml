@@ -24,7 +24,7 @@ dependencies:
   flutter_signin_button: ^1.1.0
   flutter:
     sdk: flutter
-  material_design_icons_flutter: ^3.2.3895
+  material_design_icons_flutter: 4.0.5955
 
 
 
