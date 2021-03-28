@@ -175,7 +175,9 @@ class HomePageState extends State<HomePage> {
             ),
           ],
         )),
-        body: Container(
+        body: ListView(
+        children: <Widget>[
+          Container(
           width: double.infinity,
           margin: EdgeInsets.only(left: 20.0, right: 20, bottom: 10, top: 10),
           child: Column(
@@ -208,14 +210,50 @@ class HomePageState extends State<HomePage> {
                       color: Color(0xff6894BD),
                       fontSize: 25,
                       fontWeight: FontWeight.bold)),
+              Container(
+                height: 320,
+                width: 300,
+                margin: EdgeInsets.all(35),
+                padding: EdgeInsets.all(30),
+                decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    color: Color(0xffC9E1EE),
+                    boxShadow: [BoxShadow(color: Color(0xffD9DFE2))],
+                    borderRadius: BorderRadius.circular(15)),
+                child: Text(
+                  '- Informática\n- administração\n- Mecânica\n- Edificações\n- Estradas\n- Eletrotécnica\n- Eletrônica\n- Meteorologia\n- Segurança do trabalho\n- Telecomunicações\n- Turismo',
+                  style: TextStyle(color: Color(0xff1D2022), fontSize: 20),
+                ),
+              ),
+
               SizedBox(height: 30),
               Text('Unidades',
                   style: TextStyle(
                       color: Color(0xff6894BD),
                       fontSize: 25,
                       fontWeight: FontWeight.bold)),
+              Container(
+                height: 320,
+                width: 300,
+                margin: EdgeInsets.all(35),
+                padding: EdgeInsets.all(30),
+                decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    color: Color(0xffC9E1EE),
+                    boxShadow: [BoxShadow(color: Color(0xffD9DFE2))],
+                    borderRadius: BorderRadius.circular(15)),
+                child: Text(
+                  '- Informática\n- administração\n- Mecânica\n- Edificações\n- Estradas\n- Eletrotécnica\n- Eletrônica\n- Meteorologia\n- Segurança do trabalho\n- Telecomunicações\n- Turismo',
+                  style: TextStyle(color: Color(0xff1D2022), fontSize: 20),
+                ),
+              ),
+
+
             ],
           ),
-        ));
+        )
+        ]
+        )
+    );
   }
 }

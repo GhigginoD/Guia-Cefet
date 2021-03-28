@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Redes_sociais extends StatefulWidget {
   State<Redes_sociais> createState() {
@@ -35,7 +35,7 @@ class Redes_sociais_page extends State<Redes_sociais> {
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
-                  leading: Icon(Icons.photo_camera_outlined, color: Color(0xff9DA4A7)),
+                  leading: Icon(MdiIcons.instagram, color: Color(0xff9DA4A7)),
                   title: Text("Instagram",
                       style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
                   trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
@@ -53,7 +53,7 @@ class Redes_sociais_page extends State<Redes_sociais> {
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
-                  leading: Icon(Icons.alternate_email, color: Color(0xff9DA4A7)),
+                  leading: Icon(MdiIcons.twitter, color: Color(0xff9DA4A7)),
                   title: Text("Twitter",
                       style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
                   trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
@@ -71,7 +71,7 @@ class Redes_sociais_page extends State<Redes_sociais> {
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
-                  leading: Icon(Icons.ac_unit, color: Color(0xff9DA4A7)),
+                  leading: Icon(MdiIcons.linkedin, color: Color(0xff9DA4A7)),
                   title: Text("Linkedin",
                       style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
                   trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
@@ -89,7 +89,7 @@ class Redes_sociais_page extends State<Redes_sociais> {
             Container(
               padding: EdgeInsets.all(15),
               child: ListTile(
-                  leading: Icon(Icons.assignment_ind_outlined, color: Color(0xff9DA4A7)),
+                  leading: Icon(MdiIcons.facebook, color: Color(0xff9DA4A7)),
                   title: Text("Facebook",
                       style: TextStyle(color: Color(0xff9DA4A7), fontSize: 18)),
                   trailing: Icon(Icons.arrow_forward, color: Color(0xff6894BD)),
